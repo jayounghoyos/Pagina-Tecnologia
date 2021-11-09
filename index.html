@@ -1,89 +1,104 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.4.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.4.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.4.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL Arte</title>
+    <link rel="stylesheet" href="tinyStyle.css">
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<body background="images\2639.png">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+
+    <header class="header">
+        <img src="./images/gato-fachero-como-no.jpeg" alt="gato-fachero" class="profile-img">
+        <nav class="nav-right-section">
+            <a href="mailto:juan.young@envigado.edu.co">
+                <img class="contact-icons" src="./images/correo-electronico.png" alt="">
+            </a>
+            <a href=""> <img src="./images/instagram.png" class="contact-icons"></a>
+            <br></br>
+            <a href=""> <img src="./images/github.png" class="contact-icons"></a>
+            <a href=""> <img src="./images/youtube.png" class="contact-icons"></a>
+        </nav>
+    </header>
+
+    <section id="Indice">
+        <h2 class="tittle">Indice</h2>
+
+        <ol>
+            <li><a href="#¿Qué es?">¿Qué es?</a></li>
+            <li><a href="#Historia">Historia</a></li>
+            <li><a href="#Pintores">Algunos pintores</a></li>
+        </ol>
+    </section>
+    <br>
+
+    <section id="¿Qué es?">
+        <h1 class="tittle">¿Qué es?</h1>
+
+        <p>El arte ​ es entendido generalmente como cualquier actividad o producto realizado con una finalidad estética y también comunicativa, mediante la cual se expresan ideas, emociones y, en general, una visión del mundo,a través de diversos recursos,
+            como los plásticos, lingüísticos, sonoros, corporales y mixtos.​</p>
+
+        <img src="images\Placer-Arte.jpeg " alt=" " height="490 ">
+    </section>
+
+    <section id="Historia">
+        <h1 class="tittle">Historia</h1>
+
+        <div class="history">
+            <img src="images\rupestre.jpg " alt=" " width="350">
+            <div class="historyP">
+                <p>La historia del arte es el relato de la evolución del arte a través del tiempo. Entendido como cualquier actividad o producto realizado por el ser humano con finalidad estética o comunicativa​ El inicio del arte se remonta a más de 35.000
+                    años, indican nuevas dataciones. Las magníficas pinturas rupestres del norte de España y sur de Francia, presentes en las cuevas de Altamira, Lascaux y Chauvet
+                </p>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <section id="Pintores" class="espaciado">
+        <h1 class="tittle">Algunos pintores</h1>
+
+        <div class="history ">
+            <img src="images\frida-y-el-sufrimiento.jpg " alt=" ">
+
+            <div class="historyP">
+                <h2>Frida Kahlo</h2>
+                <p>Magdalena Carmen Frida Kahlo Calderón, ​ conocida mundialmente como Frida Kahlo, fue una pintora mexicana reconocida como un icono pop de la cultura de México.​ Su obra gira temáticamente en torno a su biografía y a su propio sufrimiento.</p>
+            </div>
+        </div>
+
+        <h2>Obra: Autorretrato</h2>
+
+        <img src="images\1926-autorretrato.jpg " alt=" " width="300 ">
+
+        <h2>Leonardo da Vinci</h2>
+
+        <div class="history">
+            <img src="images\Da-Vinci.jpg " alt=" ">
+            <div class="historyP">
+                <p>Leonardo da Vinci fue un polímata florentino del Renacimiento italiano. Fue a la vez pintor, anatomista, arquitecto, paleontólogo, ​ artista, botánico, científico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista.</p>
+            </div>
+        </div>
+
+        <h2>Obra: La Mona lisa</h2>
+        <img src="images\mona-lisa-0.jpg " alt=" " width="300 ">
+
+    </section>
+    <a href="#Indice ">Volver al Indice</a>
+</body>
+
+<footer>
+    <section class="Actividad">
+        <h3>¿Cuantos pintores se mencionaron?</h3>
+        <form action="text" class="input-text">
+            <input type="text">
+        </form>
+    </section>
+</footer>
+
 </html>
