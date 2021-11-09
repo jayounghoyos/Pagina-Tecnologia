@@ -1,0 +1,25 @@
+.outer {
+    border: 5px dotted rgb(214, 129, 137);
+    color: springgreen;
+    border-radius: 5px;
+    width: 450px;
+    padding: 10px;
+    margin-bottom: 40px;
+    overflow: auto;
+}
+
+.outer p {
+    float: right;
+}
+
+.float {
+    padding: 10px;
+    border: 5px solid rgba(214, 129, 137, .4);
+    border-radius: 5px;
+    background-color: thistle;
+    background-color: royalblue;
+    color: #fff;
+    float: left;
+    width: 200px;
+    margin: 0 20px 0 0;
+}

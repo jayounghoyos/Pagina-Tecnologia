@@ -1,0 +1,63 @@
+    * {
+        margin: 5;
+        padding: 10;
+        font-size: 20px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    body {
+        font-family: sans-serif;
+    }
+    
+    .tittle {
+        font-size: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 200;
+        margin-top: 50px;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+    }
+    
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        border: 5px solid gray;
+        border-radius: 220px;
+        justify-content: start;
+        margin-right: 20px;
+    }
+    
+    .history {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .historyP {
+        justify-content: right;
+        margin-left: 13px;
+    }
+    
+    .espaciado {
+        margin-bottom: 20px;
+    }
+    
+    .contact-icons {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .input-text input {
+        border-color: cornflowerblue;
+        width: 320px;
+        height: 320px;
+        max-height: 490px;
+    }
